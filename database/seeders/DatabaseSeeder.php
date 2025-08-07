@@ -16,6 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         $this->call(AksaraBatakSeeder::class);
         $this->call(TranslitSeeder::class);
-        $this->call(QuizSeeder::class); 
+        $this->call(QuizSeeder::class);
+        $this->call(DiacriticSeeder::class);
     }
 }

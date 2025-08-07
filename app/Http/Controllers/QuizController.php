@@ -105,7 +105,7 @@ class QuizController extends Controller
                     'type' => $type,
                     'user_answer' => $qa->answer->text ?? null,
                     'is_correct' => $isCorrect,
-                    'correct_answer' => $question->answers->firstWhere('is_correct', true)?->text ?? null,
+                    'correct_answer' => $question->answers->firstWhere('is_correct', true)?->answer_text ?? null,
                 ];
             }
         }

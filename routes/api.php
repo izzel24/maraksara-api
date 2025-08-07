@@ -23,4 +23,5 @@ Route::post('/quiz/{sessionToken}/submit', [QuizController::class, 'submitAnswer
 Route::post('/quiz/{sessionToken}/finish', [QuizController::class, 'finish']);
 Route::post('/quiz/{sessionToken}/end', [QuizController::class, 'endQuiz']);
 Route::get('/quiz/{token}/next', [QuizController::class, 'getNextQuestion']);
+Route::get('/diacritics', [AksaraBatakController::class, 'getDiacritics']);
 });
